@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FarmChain Nigeria 🌾
 
-## Getting Started
+A blockchain-powered agricultural platform empowering Nigerian farmers with transparent crop management, direct market access, and financial inclusion.
 
-First, run the development server:
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- MetaMask browser extension
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/farmchain-nigeria.git
+cd farmchain-nigeria
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+farmchain-nigeria/
+├── app/                          # Next.js 13+ App Router
+│   ├── api/                      # API Routes
+│   │   ├── farmers/route.ts      # Farmer management endpoints
+│   │   ├── crops/route.ts        # Crop tracking endpoints
+│   │   ├── marketplace/route.ts  # Marketplace endpoints
+│   │   └── finance/route.ts      # Financial services endpoints
+│   ├── globals.css               # Global styles
+│   ├── layout.tsx                # Root layout
+│   └── page.tsx                  # Home page
+├── components/                   # React Components
+│   ├── community/                # Community features
+│   ├── finance/                  # Financial services
+│   ├── ui/                       # Reusable UI components
+│   ├── Navigation.tsx            # Main navigation
+│   ├── LandingPage.tsx          # Landing page
+│   ├── Dashboard.tsx            # Farmer dashboard
+│   ├── CropsManagement.tsx      # Crop tracking
+│   ├── Marketplace.tsx          # Crop marketplace
+│   ├── Finance.tsx              # Financial services
+│   └── Community.tsx            # Community platform
+├── lib/                         # Utility functions
+│   ├── constants.ts             # App constants
+│   ├── mockData.ts             # Demo data
+│   ├── blockchain.ts           # Blockchain utilities
+│   └── utils.ts                # Helper functions
+├── types/                       # TypeScript definitions
+│   └── index.ts                # Type definitions
+├── public/                      # Static assets
+├── smart-contracts/             # Solidity contracts
+│   ├── FarmerRegistry.sol
+│   ├── CropTracker.sol
+│   ├── Marketplace.sol
+│   └── PaymentEscrow.sol
+└── docs/                        # Documentation
+    ├── API.md                   # API documentation
+    ├── BLOCKCHAIN.md            # Blockchain integration guide
+    └── DEPLOYMENT.md            # Deployment instructions
+```
 
-## Learn More
+## 🌟 Key Features
 
-To learn more about Next.js, take a look at the following resources:
+### 🔐 Blockchain Integration
+- **Farmer Identity**: Verified digital identity on Polygon blockchain
+- **Crop Tracking**: Immutable crop lifecycle recording
+- **Smart Contracts**: Automated escrow, loans, and insurance
+- **Supply Chain**: End-to-end transparency from farm to market
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🌾 Crop Management
+- Digital crop documentation
+- Growth progress tracking
+- Quality grade recording
+- Harvest optimization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🛒 Direct Marketplace
+- Farmer-to-buyer direct sales
+- Smart contract escrow system
+- Quality verification
+- Price discovery
 
-## Deploy on Vercel
+### 💰 Financial Services
+- **Micro-loans**: Smart contract-based lending
+- **Esusu Groups**: Traditional savings groups on blockchain
+- **Insurance**: Weather-indexed crop insurance
+- **Digital Wallet**: Secure payment processing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👥 Community Platform
+- Farmer knowledge sharing
+- Expert agricultural advice
+- Success story showcases
+- Peer-to-peer learning
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Technology Stack
+
+### Frontend
+- **Next.js 14**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **Framer Motion**: Smooth animations
+- **Lucide React**: Modern icons
+
+### Blockchain
+- **Polygon**: Low-cost, fast transactions
+- **Ethers.js**: Ethereum library
+- **Solidity**: Smart contract development
+- **IPFS**: Decentralized file storage
+
+### Backend
+- **Next.js API Routes**: Serverless functions
+- **MongoDB**: Database (production)
+- **Prisma**: Database ORM
+- **Africa's Talking**: SMS and USSD integration
+
+## 🌍 Nigerian Market Focus
+
+### Target Crops
+- **Staples**: Cassava, Yam, Maize, Rice
+- **Cash Crops**: Cocoa, Oil Palm, Cotton
+- **Regional Specialties**: Millet, Sorghum (North), Plantain (South)
+
+### Geographic Coverage
+- **Northern States**: Kaduna, Kano, Katsina, Sokoto
+- **Middle Belt**: Benue, Plateau, Niger, Kwara
+- **Southern States**: Ogun, Oyo, Enugu, Cross River
+
+### Local Adaptations
+- Multi-language support (English, Hausa, Yoruba, Igbo)
+- USSD integration for feature phones
+- Nigerian Naira integration
+- Local farming calendar integration
+
+## 📱 USSD Integration
+
+Access FarmChain via feature phones using USSD code: **\*347\*123#**
+
+```
+Main Menu:
+1. Register Farm
+2. Record Crop
+3. Check Market Prices
